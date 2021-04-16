@@ -7,13 +7,14 @@ b = 10000
 def catch_me(cony_loc, brown_loc):
     time = 0
     queue = deque()
-
     queue.append((brown_loc, 0))  # 위치 + 시간
     visited = [{} for _ in range(200001)]#  브라운의 방문여부를 저장
 
 #코니                         for문        0       1      2
     while cony_loc <= 200000:    #코니 [0,11] [1,12]  [2,13]
         cony_loc += time
+        if cony_loc>20000:
+            return -1
         if time in visited[cony_loc]:
             return time
 
