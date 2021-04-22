@@ -1,5 +1,5 @@
-bridge_length, weight = 2, 10
-truck_weights = [7,4,5,6]
+bridge_length, weight = 100, 100
+truck_weights = [10,10,10,10,10,10,10,10,10,10]
 def solution(bridge_length, weight, truck_weights):
     time = 0
     queue = [0] * bridge_length
